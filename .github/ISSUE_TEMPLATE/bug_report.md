@@ -19,7 +19,7 @@ A clear and concise description of the problem.
 # Expected Behavior
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+# Screenshots
 If applicable, add screenshots to help explain the problem.
 
 # Additional Context
