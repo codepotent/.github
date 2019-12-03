@@ -1,4 +1,4 @@
-# Code Potent Community Health Files
+# Community Health Files
 
 These files and templates are available globally to all newly created repositories under the Code Potent organization. The following are included:
 
