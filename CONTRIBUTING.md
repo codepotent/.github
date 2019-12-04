@@ -105,7 +105,7 @@ if ($the_force === true) {
 
 ___
 
-### 7. Strict Type Comparisons for Arrays
+### 7. Strict Type Comparisons
 
 Always prefer `===` over `==` to ensure that the data you're testing is of the correct type. Strict checking should also be used for arrays. For example, the following code:
 
