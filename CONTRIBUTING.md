@@ -1,4 +1,4 @@
-# Contributing to Code Potent Projects
+# Contributing
 
 The code standard used in Code Potent's ClassicPress plugins is near identical to the code standard used in WordPress plugins, **however,** _there are a handful of notable differences._ To ensure your pull requests aren't held up or rejected, please carefully follow the standard.
 
