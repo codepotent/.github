@@ -245,17 +245,14 @@ Classes, methods, and functions should be designed to _fail early and fail often
 ```php
 function prefix_display_items() {
 
-    // Get items.
     $items = get_items();
     
-    // if (!current_user_can('manage_options')) {
+    if (!current_user_can('manage_options')) {
         return;
     } else {
-        // Check is user is in dashboard.
         if (!is_admin()) {
-            return; // Not in dashboard; bail!
+            return;
         } else {
-            // Do something with $items.
             echo '<ul>';
             foreach ($items as $item) {
                 echo '<li>'.esc_html__($item['title']).'</li>';
@@ -269,17 +266,14 @@ The above code _does work_, but, it has a couple of issues. First, if the user i
 ```php
 function prefix_display_items() {
 
-    // Insufficient permission? Bail immediately.
     if (!current_user_can('manage_options')) {
         return;
     }
     
-    // User not in dashboard? Bail immediately.
     if (!is_admin()) {
         return;
     }
     
-    // Get and print the items.
     $items = get_items();
     echo '<ul>';
     foreach ($items as $item) {
