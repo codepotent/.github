@@ -3,7 +3,7 @@ name: Bug report
 about: Found a bug? Use this form to get it squashed!
 title: ''
 labels: ''
-assignees: ''
+assignees: johnalarcon
 
 ---
 

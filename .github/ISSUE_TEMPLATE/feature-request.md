@@ -3,7 +3,7 @@ name: Feature Request
 about: Got an idea? Use this form to get it under consideration!
 title: ''
 labels: ''
-assignees: ''
+assignees: johnalarcon
 
 ---
 
