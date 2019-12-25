@@ -64,18 +64,22 @@ ___
 
 ### 4. CSS Selectors
 
-CSS selectors use hyphens `-` rather than underscores `_`. Selectors are prefixed in a consistent way to minimize the possibility of CSS collisions. For example, the following code:
+CSS selectors use hyphens `-` rather than underscores `_`. Selectors are prefixed in a consistent way with the plugin's slug to minimize the possibility of CSS collisions with other plugins or the theme. While it is often more convenient to use abbreviations, these are not allowed. For example, the following code:
 
 ```css
 .some_class_selector,
 #some_id_selector {
     color:#f00;
 }
+.tps_some_class_selector,
+#tps_some_id_selector {
+    color:#f00;
+}
 ```
 ...should be rewritten as:
 ```css
-.prefix-some-class-selector,
-#prefix-some-id-selector {
+.the-plugin-slug-some-class-selector,
+#the-plugin-slug-some-id-selector {
     color:#f00;
 }
 ```
@@ -288,3 +292,33 @@ ___
 ### 18. Scripts & Styles
 
 Scripts and styles are only loaded for pages or views in which they are actually used. Scripts and styles are locally stored and non-minified.
+
+### 19. No Logic in Returns
+
+When returning a value from a function or method, the line must not contain any logic. Logic must be executed _before_ the return. For example, the following code:
+
+```php
+return isset($some_variable);
+```
+...should be rewritten as:
+```php
+if (isset($some_variable)) {
+    $my_value = true;
+} else {
+    $my_value = false;
+}
+return $my_value;
+```
+...or...
+```php
+$my_value = false;
+if (isset($some_variable)) {
+    $my_value = true;
+}
+return $my_value;
+```
+...or...
+```php
+$my_value = (isset($some_variable)) ? true : false;
+return $my_value;
+```
