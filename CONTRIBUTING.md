@@ -138,7 +138,7 @@ if ($my_var === true) {
 }
 
 $my_array = ['some value', 'another value'];
-if (in_array('some string', $my_array), true) {
+if (in_array('some string', $my_array, true)) {
     // Do something.
 }
 ```
