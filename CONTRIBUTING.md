@@ -34,13 +34,13 @@ PHP files should tend to have a single, long-form opening `<?php` tag. A closing
 ```
 ...should be rewritten as:
 ```php
-echo '<p>'.esc_html($some_value).'<p>';
-echo '<p>'.esc_html($another_value).'<p>';
+echo '<p>'.esc_html($some_value).'</p>';
+echo '<p>'.esc_html($another_value).'</p>';
 ```
 If you need pretty source, use `\n` in double-quotes to create breaks:
 ```php
-echo '<p>'.esc_html($some_value).'<p>'."\n";
-echo '<p>'.esc_html($another_value).'<p>'."\n";
+echo '<p>'.esc_html($some_value).'</p>'."\n";
+echo '<p>'.esc_html($another_value).'</p>'."\n";
 ```
 
 ___
