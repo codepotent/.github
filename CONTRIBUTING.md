@@ -232,7 +232,7 @@ ___
 
 ### 15. Internationalization
 
-All displayable texts, with the exception of internal slugs, must be run through the appropriate translation functions. If dealing with number-related texts such as _0 items_, _1 item_, _2 items_, etc, correct pluralizaion must be accounted for.
+All displayable texts, with the exception of internal slugs, must be run through the appropriate translation functions. If dealing with number-related texts such as _0 items_, _1 item_, _2 items_, etc, correct pluralization must be accounted for.
 
 ___
 
