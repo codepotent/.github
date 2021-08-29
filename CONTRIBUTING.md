@@ -293,6 +293,8 @@ ___
 
 Scripts and styles are only loaded for pages or views in which they are actually used. Scripts and styles are locally stored and non-minified.
 
+___
+
 ### 19. No Logic in Returns
 
 When returning a value from a function or method, the line must not contain any logic. Logic must be executed _before_ the return. For example, the following code:
